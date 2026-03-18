@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object in js</title>
+  </head>
+  <body>
+    <script>
+      let student = {
+        id: 101,
+        name: "Rohit",
+        age: 23,
+        ismarried: false,
+        address: {
+          streetNo: 2,
+          pincode: 12342,
+          city: "Ghaziabad",
+          state: "UP",
+        },
+        education: ["b.tech", "cse", "2025"],
+        getinfo: function () {
+          return "my details are " + student.id + "and" + student.name;
+        },
+      };
+      console.log(student);
+      console.log(typeof student);
+      console.log(student.address);
+      console.log(student.education);
+      console.log(student.getinfo());
+      //access object property using dot notation
+      console.log(student.name);
+      console.log(student.age);
+      console.log(delete student.age);
+      console.log(student);
+      let studentkeys = Object.keys(student);
+      console.log(studentkeys);
+     // for (let i = 0; i < studentkeys.length; i++) {
+       // console.log(student[studentkeys[i]]);
+     //}
+      //for in loop
+      for (let x in student) {
+        console.log(student[x]);
+      }
+      let myinfo=new Object();
+      myinfo.name="Rohit";
+      myinfo.age=23;
+      myinfo.ismarried=true;
+      myinfo.city="Ghaziabad";
+      console.log(myinfo);
+      // access object property using bracket notation
+      
+    </script>
+  </body>
+</html>
