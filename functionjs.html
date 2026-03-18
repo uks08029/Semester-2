@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      //function in javascript is a block of code that performs a specific task. It is a reusable piece of code that can be called multiple times throughout a program. Functions can take input parameters, perform operations on them, and return a value.
+      function demo() {
+        console.log("This is a demo function");
+      }
+      demo();
+      function demo1(text) {
+        console.log("Hello " + text);
+      }
+      demo1("React");
+      function cal(a, b = 30) {
+        console.log("addition of two number is " + (a + b));
+      }
+      cal(10);
+      let msg=function(){
+        console.log("Hello Advanced JavaScript");
+      }
+      msg();
+      //shore code for above function i.e. arrow function
+      let msg1=()=>
+        console.log("Hello function as an arrow");
+        msg1();  
+      let add=(a,b)=>{ 
+        console.log("first number is "+a);
+        console.log("second number is "+b);
+        console.log("addition of two number is "+(a+b));
+    }
+        add(20,30);
+        //IIFEs (Immediately Invoked Function Expression)
+        //(IIFE) is a JavaScript function that runs as soon as it is defined. It is a design pattern that is used to create a new scope and avoid polluting the global namespace. An IIFE is defined using a function expression and is immediately invoked after its definition.
+        (function(){
+            console.log("This is an IIFE function");
+        })();
+        //callback function is a function that is passed as an argument to another function and is executed after the completion of that function. It allows you to perform asynchronous operations and handle events in JavaScript.
+        function mul(callback){
+            var num1=10;
+           console.log("First value is "+num1);
+           var num2=20;
+           console.log("Second value is "+num2);
+           var res=num1*num2;
+           callback(res);
+        }
+        function result(res){
+            console.log("Multiplication of two number is "+res);
+        }
+        mul(result);
+        //callback function setTimeout API
+        function msg2(){
+            
+            document.writeln("hello")
+        }
+        function loading(){
+            document.writeln("Loading...");
+        };
+        setTimeout(msg2, 3000);
+     loading();
+     //map filter and reduce are higher order functions in JavaScript that are used to manipulate arrays. They allow you to perform operations on each element of an array and return a new array or a single value based on the operation performed.
+     let num=[1,2,3,4,5];
+     let result1=num.map(n=>n*2);
+        console.log("Result of map function is "+result1);
+        let result2=num.filter(n=>n%2==0);
+        console.log(result1);
+        let result3=num.reduce((acc,n)=>acc+n,0);
+        console.log("Result of reduce function is "+result3);
+        //ascryonous function is a function that allows you to perform asynchronous operations in JavaScript. It is used to handle tasks that may take some time to complete, such as fetching data from an API or reading a file. Asynchronous functions can be defined using the async keyword and can use the await keyword to wait for the completion of asynchronous operations.
+        //promises are a way to handle asynchronous operations in JavaScript. A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises allow you to write cleaner and more readable code when dealing with asynchronous tasks.
+        let promise = new Promise(function(resolve, reject) {
+    let age = 25;
+    if (age >= 18) {
+        resolve("You are eligible to vote");
+    } else {
+        reject("You are not eligible to vote");
+    }
+});
+        promise.then(result=>console.log(result)).catch(error=>console.log(error));
+    </script>
+  </body>
+</html>
+ 
