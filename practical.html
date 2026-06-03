@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hidden Paragraph & Random Color</title>
+    <style>
+        #hiddenPara {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2 
+    id="text"
+    onmouseover="changeColor()" 
+    onmouseout="resetColor()">
+    Hover over this text
+</h2>
+
+<button onclick="showParagraph()">Show Paragraph</button>
+
+<p id="hiddenPara">
+    This is a hidden paragraph. Now you can see me!
+</p>
+
+<script>
+    function showParagraph() {
+        document.getElementById("hiddenPara").style.display = "block";
+    }
+
+    function changeColor() {
+        let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        document.getElementById("text").style.color = randomColor;
+    }
+
+    function resetColor() {
+        document.getElementById("text").style.color = "black";
+    }
+</script>
+
+</body>
+</html>
