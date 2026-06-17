@@ -1,0 +1,24 @@
+.student-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px auto;
+  width: 250px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  display: inline-block;
+  text-align: left;
+}
+
+.student-card h2 {
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
