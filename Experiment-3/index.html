@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife | Mobile-First Design</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md p-4 sticky top-0 z-50">
+        <nav class="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto">
+            <div class="text-2xl font-extrabold text-blue-600 tracking-tight">
+                FitLife
+            </div>
+            <ul class="flex flex-col md:flex-row gap-4 mt-4 md:mt-0 text-center font-medium">
+                <li><a href="#" class="hover:text-blue-500 transition">Home</a></li>
+                <li><a href="#" class="hover:text-blue-500 transition">Programs</a></li>
+                <li><a href="#" class="hover:text-blue-500 transition">Trainers</a></li>
+                <li><a href="#" class="hover:text-blue-500 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Section-1) -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transform Your Body, Transform Your Life</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">Expert-led training programs designed to help you reach your peak physical potential.</p>
+            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+                Join Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="max-w-6xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+        
+        <!-- Responsive Grid: 1 col (Mobile), 2 cols (MD), 3 cols (LG) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-blue-500 text-4xl mb-4">🏋️</div>
+                <h3 class="text-xl font-bold mb-2">Weight Training</h3>
+                <p class="text-gray-600">Build strength and muscle mass with our personalized lifting routines.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-blue-500 text-4xl mb-4">🧘</div>
+                <h3 class="text-xl font-bold mb-2">Yoga Classes</h3>
+                <p class="text-gray-600">Improve flexibility and mental clarity through guided flow sessions.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="text-blue-500 text-4xl mb-4">🥗</div>
+                <h3 class="text-xl font-bold mb-2">Diet Plans</h3>
+                <p class="text-gray-600">Customized nutrition guides tailored to your specific fitness goals.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 px-6 text-center">
+        <div class="max-w-6xl mx-auto">
+            <p class="mb-2">Contact: support@fitlife.com | +1 (555) 000-FIT</p>
+            <p class="text-sm">&copy; 2026 FitLife Fitness Training. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
